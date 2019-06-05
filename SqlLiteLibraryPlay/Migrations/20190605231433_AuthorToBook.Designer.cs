@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SqlLiteLibraryPlay;
 
 namespace SqlLiteLibraryPlay.Migrations
 {
     [DbContext(typeof(SqlLiteLibraryPlayContext))]
-    partial class SqlLiteLibraryPlayContextModelSnapshot : ModelSnapshot
+    [Migration("20190605231433_AuthorToBook")]
+    partial class AuthorToBook
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
