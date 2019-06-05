@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Data.SQLite;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace SqlLiteLibraryPlay
 {
@@ -8,6 +10,17 @@ namespace SqlLiteLibraryPlay
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+    }
+
+    public class SqlLiteLibraryPlayContext : DbContext
+    {
+        public DbSet<Book> books { get; set; }
+        public DbSet<BookShelf> bookshelves { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite("Data Source=SqlLiteLibraryPlay.db");
         }
     }
 
