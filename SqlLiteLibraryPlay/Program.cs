@@ -30,13 +30,12 @@ namespace SqlLiteLibraryPlay
             BottomLeft.books[5] = b5;
             BottomLeft.books[6] = b6;
             BottomLeft.books[7] = b7;
-            BottomLeft.books[8] = b8;
 
             foreach (Book boo in BottomLeft.books)
             {
-                Console.WriteLine("Title" +boo.Title);
-                Console.WriteLine("/t Author" + boo.Author);
-                Console.WriteLine("/t Genre" + boo.Genre);
+                Console.WriteLine("Title: " +boo.Title);
+                Console.WriteLine("\t Author: " + boo.Author);
+                Console.WriteLine("\t Genre: " + boo.Genre);
             }
         }
     }
