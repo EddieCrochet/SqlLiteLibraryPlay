@@ -9,7 +9,7 @@ using SqlLiteLibraryPlay;
 namespace SqlLiteLibraryPlay.Migrations
 {
     [DbContext(typeof(SqlLiteLibraryPlayContext))]
-    [Migration("20190605034021_InitialCreate")]
+    [Migration("20190605034923_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
