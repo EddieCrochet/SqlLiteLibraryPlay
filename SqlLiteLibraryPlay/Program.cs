@@ -21,7 +21,23 @@ namespace SqlLiteLibraryPlay
             Book b6 = new Book("Hal About it", "Hal hallerson", "Comedy");
             Book b7 = new Book("TDave", "Theodore David", "Biography");
             Book b8 = new Book("Alphabet", "Kim Who", "Childrens");
- 
+
+            BottomLeft.books[0] = b;
+            BottomLeft.books[1] = b1;
+            BottomLeft.books[2] = b2;
+            BottomLeft.books[3] = b3;
+            BottomLeft.books[4] = b4;
+            BottomLeft.books[5] = b5;
+            BottomLeft.books[6] = b6;
+            BottomLeft.books[7] = b7;
+            BottomLeft.books[8] = b8;
+
+            foreach (Book boo in BottomLeft.books)
+            {
+                Console.WriteLine("Title" +boo.Title);
+                Console.WriteLine("/t Author" + boo.Author);
+                Console.WriteLine("/t Genre" + boo.Genre);
+            }
         }
     }
 
