@@ -73,10 +73,15 @@ namespace SqlLiteLibraryPlay
         public string Name { get; set; }
         public Book[] books { get; set; }
 
+        public BookShelf()
+        {
+
+        }
+
         public BookShelf(string name, Book[] _books)
         {
             name = Name;
-
+            books = _books;
         }
     }
 }
