@@ -30,9 +30,8 @@ namespace SqlLiteLibraryPlay
         public string Title { get; set; }
         public string Genre { get; set; }
 
-        public Book(int id, string title, string genre)
+        public Book(string title, string genre)
         {
-            id = ID;
             Title = title;
             Genre = genre;
         }
@@ -44,9 +43,8 @@ namespace SqlLiteLibraryPlay
         public string Name { get; set; }
         public Book[] books { get; set; }
 
-        public BookShelf(int id, string name)
+        public BookShelf(string name)
         {
-            id = ID;
             name = Name;
         }
     }
