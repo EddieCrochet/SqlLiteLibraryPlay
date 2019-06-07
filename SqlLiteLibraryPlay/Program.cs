@@ -9,6 +9,11 @@ namespace SqlLiteLibraryPlay
     {
         static void Main(string[] args)
         {
+            // I basically just want to make sure I'm adding this to my
+            //context and/or database, and not JUST the list of books
+            //on the shelf... but I want the collection of books in both places
+            //add all to context then to shelf from there?
+
             BookShelf BottomLeft = new BookShelf("BottomLeft", new Book[8]);
             //Bottom left shelfonly holds 8 books
 
