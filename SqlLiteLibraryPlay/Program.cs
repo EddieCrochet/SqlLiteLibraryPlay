@@ -47,6 +47,10 @@ namespace SqlLiteLibraryPlay
 
     public class SqlLiteLibraryPlayContext : DbContext
     {
+        public SqlLiteLibraryPlayContext(DbContextOptions<SqlLiteLibraryPlayContext> options) : base(options)
+        { 
+        }
+
         public DbSet<Book> books { get; set; }
         public DbSet<BookShelf> bookshelves { get; set; }
 
